@@ -68,25 +68,34 @@ public class Woodcutting : Skill
 
     public void CutTree()
     {
-        isCutting = true;
-        treeType = TreeType.Basic;
-        timeAmount = 3.0f;
-        timeRemaining = 3.0f;
+        if (treeType != TreeType.Basic)
+        {
+            isCutting = true;
+            treeType = TreeType.Basic;
+            timeAmount = 3.0f;
+            timeRemaining = 3.0f;
+        }
     }
 
     public void CutOakTree()
     {
-        isCutting = true;
-        treeType = TreeType.Oak;
-        timeAmount = 4.0f;
-        timeRemaining = 4.0f;
+        if (treeType != TreeType.Oak)
+        {
+            isCutting = true;
+            treeType = TreeType.Oak;
+            timeAmount = 4.0f;
+            timeRemaining = 4.0f;
+        }
     }
 
     public void CutWillowTree()
     {
-        isCutting = true;
-        treeType = TreeType.Willow;
-        timeAmount = 5.0f;
-        timeRemaining = 5.0f;
+        if (treeType != TreeType.Willow)
+        {
+            isCutting = true;
+            treeType = TreeType.Willow;
+            timeAmount = 5.0f;
+            timeRemaining = 5.0f;
+        }
     }
 }
